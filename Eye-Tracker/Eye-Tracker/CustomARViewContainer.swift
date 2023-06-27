@@ -36,7 +36,7 @@ class CustomARView: ARView, ARSessionDelegate {
         
         super.init(frame: .zero)
         
-        self.debugOptions = [.showAnchorOrigins]
+//        self.debugOptions = [.showAnchorOrigins]
         
         self.session.delegate = self
         
@@ -56,7 +56,7 @@ class CustomARView: ARView, ARSessionDelegate {
         // eyeGazeActive.toggle()
         
         /// 2. Detect winks
-        // detectWink(faceAnchor: faceAnchor)
+         detectWink(faceAnchor: faceAnchor)
         
         /// 3. Detect eyebrow raise
         detectEyebrowRaise(faceAnchor: faceAnchor)
